@@ -16,4 +16,6 @@ if (in_array($uri, array('/', '/index', '/home'))) {
     $response->about();
 } elseif ($uri === '/contact') {
     $response->contact();
+ } else {
+     $response->not_found();
  }
