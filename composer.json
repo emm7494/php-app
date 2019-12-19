@@ -1,0 +1,20 @@
+{
+    "name": "emm7494/php_app",
+    "description": "A PHP CRUD app.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "emm7494",
+            "email": "emm7494@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "autoload": {
+	    "psr-4": {
+            "App\\": "src/",
+            "Templates\\": "templates/"
+	    }
+    }
+}
