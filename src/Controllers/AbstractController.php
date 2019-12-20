@@ -7,17 +7,16 @@ namespace App\Controllers;
 class AbstractController
 {
     public function __construct()
-    {
-        print_r('Cool...');
-    }
+    { }
 
     public function __destruct()
+    { }
+
+    public function write_json(array $array)
     {
-        print_r('Not Cool...');
+        echo json_encode($array);
     }
 
-    public function render()
-    {
-        print_r('Rendering...');
-    }
+    public function read_json()
+    { }
 }

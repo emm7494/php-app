@@ -6,11 +6,11 @@ namespace App\Controllers;
 
 use Templates\Utils\ViewMaker;
 
-class BackController extends ViewMaker 
+class HTMLController extends ViewMaker 
 {
-    public function index($method, $uri): void
+    public function index(): void
     {
-        $this->render('index', ['three' => 'index_here...']);
+        $this->render('index', ["three" => "index_here..."]);
     }
 
     public function about(): void
