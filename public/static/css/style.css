@@ -1,3 +1,99 @@
-body {
-    /* background-color: transparent; */
+:root {
+    --light: #fafbfa;
+    --light-2: #e6e8e9;
+    --brand: #f8be12;
+    --dark-2: #616759;
+    --dark: #332f31;
+
+    --light-alt: #ffffff;
+    --light-2-alt: #f3f3f3;
+    --brand-alt: #fdc10f;
+    --dark-2-alt: #403f3f;
+    --dark-alt: #222222;
+
+    --sgc-padding: 15%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 0px 0px;
+    grid-template-columns: var(--sgc-padding) repeat(12, 1fr) var(--sgc-padding);
+    grid-template-rows: 70px 110px 65px minmax(30vw, auto) 300px 70px;
+    grid-template-areas:
+        "hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1"
+        "hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2"
+        ".   hb3 hb3 hb3 hb3 hb3 hb3 hb3 hb3 hb3 hb3 hb3 hb3 ."
+        "hro hro hro hro hro hro hro hro hro hro hro hro hro hro"
+        "mn mn mn mn mn mn mn mn mn mn mn mn mn mn"
+        "ft ft ft ft ft ft ft ft ft ft ft ft ft ft";
+}
+
+.hbar-1 {
+    grid-area: hb1;
+    background-color: var(--dark-alt);
+    color: var(--light-alt);
+}
+
+.hbar-2 {
+    grid-area: hb2;
+}
+
+.hbar-3 {
+    grid-area: hb3;
+    background-color: var(--light-2-alt);
+    color: var(--dark-alt);
+}
+
+.main-content {
+    grid-area: mn;
+    background-color: yellowgreen;
+}
+
+.footer-content {
+    grid-area: ft;
+    background-color: purple;
+    margin: 10px;
+}
+
+.hero-grid {
+    /* background-color: orange; */
+    grid-area: hro;
+    /* display: grid; */
+    padding: 20px 0px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, [col-start] minmax(auto, auto));
+    grid-template-rows: repeat(2, [row-start] minmax(auto, auto));
+}
+
+.hero-1 {
+    background-color: crimson;
+    grid-column: span 2;
+    grid-row: span 2
+}
+
+.hero-2 {
+    background-color: green;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.hero-3 {
+    background-color: cornflowerblue;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.sgi-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: var(--sgc-padding);
+    padding-right: var(--sgc-padding);
+
+}
+
+.sgi-grid {
+    padding-left: var(--sgc-padding);
+    padding-right: var(--sgc-padding);
+    display: grid;
 }

@@ -10,12 +10,29 @@
     <title><?= $title ?></title>
 </head>
 
-<body>
-    <?= $content ?>
+<body class="wrapper">
+    <header class="hbar-1 sgi-flex">
+        <div class="view-dim">
+        </div>
+        1
+    </header>
+    <section class="hbar-2 sgi-flex">2</section>
+    <nav class="hbar-3 sgi-flex">3</nav>
+    <section class="sgi-grid hero-grid">
+        <div class="hero-1">h1</div>
+        <div class="hero-2">h2</div>
+        <div class="hero-3">h3</div>
+    </section>
+    <main class="main-content sgi-grid">
+        <?= $main_content ?>
+    </main>
+    <footer class="footer-content sgi-grid">
+        Copyright &copy; <span class="this-year"></span>
+    </footer>
     <script src="/static/vendor/jquery/dist/jquery.min.js"></script>
     <script src="/static/vendor/popper.js/dist/umd/popper.min.js"></script>
     <script src="/static/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="/static/js/script.js"></script>
+    <script type="module" src="/static/js/main.js"></script>
 </body>
 
 </html>
