@@ -25,6 +25,29 @@
         <div class="hero-2 hgi-scaler">h2</div>
         <div class="hero-3 hgi-scaler">h3</div>
     </section>
+    <section class="icon-grid sgi-margin">
+        <div class="icon-1 igi-scaler">
+            <div class="icon-i">1</div>
+        </div>
+        <div class="icon-2 igi-scaler">
+            <div class="icon-i">2</div>
+        </div>
+        <div class="icon-3 igi-scaler">
+            <div class="icon-i">3</div>
+        </div>
+        <div class="icon-4 igi-scaler">
+            <div class="icon-i">4</div>
+        </div>
+        <div class="icon-5 igi-scaler">
+            <div class="icon-i">5</div>
+        </div>
+        <div class="icon-6 igi-scaler">
+            <div class="icon-i">6</div>
+        </div>
+        <div class="icon-7 igi-scaler">
+            <div class="icon-i">7</div>
+        </div>
+    </section>
     <main class="main-content sgi-padding">
         <?= $main_content ?>
     </main>
