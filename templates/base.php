@@ -16,11 +16,11 @@
         <div class="view-dim">
         </div>
     </header>
-    <section class="hbar-2 sgi-padding sgi-flex">2</section>
+    <section class="hbar-2 sgi-margin sgi-flex">2</section>
 
     <nav class="hbar-3 sgi-flex sgi-margin">3</nav>
 
-    <section class="hero-grid sgi-padding">
+    <section class="hero-grid sgi-margin">
         <div class="hero-1 hgi-scaler">h1</div>
         <div class="hero-2 hgi-scaler">h2</div>
         <div class="hero-3 hgi-scaler">h3</div>
@@ -48,7 +48,7 @@
             <div class="icon-i">7</div>
         </div>
     </section>
-    <main class="main-content sgi-padding">
+    <main class="main-content sgi-margin">
         <?= $main_content ?>
     </main>
     <section class="footer-2 sgi-padding">

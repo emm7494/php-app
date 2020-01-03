@@ -1,5 +1,8 @@
 <?php $title = 'Mini PHP - Home'; ?>
 <?php ob_start(); ?>
+<div>
+    main content
+</div>
 <div class='square-box'>
     <div class='square-content'>
         <h3>test</h3>
@@ -7,6 +10,7 @@
 </div>
 <style>
     .square-box {
+        display: none;
         position: relative;
         width: 61.80%;
         overflow: hidden;

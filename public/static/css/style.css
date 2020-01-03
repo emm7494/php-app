@@ -15,11 +15,12 @@
 }
 
 .wrapper {
-    background-color: whitesmoke;
+    background-color: var(--light-alt);
+    color: var(--light-alt);
     display: grid;
     grid-gap: 0px 0px;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 4rem 6rem 4rem auto auto auto 14rem 3rem;
+    grid-template-rows: 3.4vw 5.2vw 3.4vw auto auto auto 14rem 3rem;
     grid-template-areas:
         "hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1 hb1"
         "hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2 hb2"
@@ -43,12 +44,11 @@
 
 .hbar-3 {
     grid-area: hb3;
-    background-color: thistle;
+    background-color: var(--light-2-alt);
 }
 
 .hero-grid {
-    background-color: antiquewhite;
-    margin: 1.5vw 0;
+    margin: 1.4vw 0;
     grid-area: hro;
     display: grid;
     grid-gap: 0.8vw;
@@ -67,31 +67,32 @@
 }
 
 .hero-1 {
-    background-color: crimson;
+    background-color: var(--light-2-alt);
     grid-column: span 2;
     grid-row: span 2
 }
 
 .hero-2 {
-    background-color: green;
+    background-color: var(--light-2-alt);
     grid-column: span 1;
     grid-row: span 1;
 }
 
 .hero-3 {
-    background-color: cornflowerblue;
+    background-color: var(--light-2-alt);
     grid-column: span 1;
     grid-row: span 1;
 }
 
 .icon-grid {
-    margin: 0.6vw 0;
+    margin: 0.5vw 0;
     grid-area: icg;
     display: grid;
     grid-template-columns:
         repeat(7, 1fr);
     grid-template-rows:
         repeat(1, 1fr);
+    background-color: blue;
 }
 
 .igi-scaler {
@@ -99,18 +100,27 @@
     overflow: hidden;
 }
 
-.igi-scaler:before {
-    content: "";
-    display: block;
-    padding-top: 44%;
-}
-
 .icon-i {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    background-color: crimson;
+    transform: translate3d(-50%, -50%, 0) scale3d(1.5, 1.5, 1.5);
+    background-color: transparent;
+}
+
+.igi-scaler:before {
+    content: "";
+    display: block;
+    padding-top: 42%;
+    background-color: var(--dark-2-alt);
+}
+
+.igi-scaler:hover:before {
+    background-color: var(--brand-alt);
+}
+
+.igi-scaler:hover {
+    color: var(--dark-2-alt);
 }
 
 .icon-1 {
@@ -147,6 +157,7 @@
     grid-column: span 1;
     background-color: violet;
 }
+
 
 .main-content {
     grid-area: mn0;
