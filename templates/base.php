@@ -11,22 +11,27 @@
 </head>
 
 <body class="wrapper">
-    <header class="hbar-1 sgi-flex">
+    <header class="hbar-1 sgi-padding sgi-flex">
+        <span>1&nbsp;</span>
         <div class="view-dim">
         </div>
-        1
     </header>
-    <section class="hbar-2 sgi-flex">2</section>
-    <nav class="hbar-3 sgi-flex">3</nav>
-    <section class="sgi-grid hero-grid">
-        <div class="hero-1">h1</div>
-        <div class="hero-2">h2</div>
-        <div class="hero-3">h3</div>
+    <section class="hbar-2 sgi-padding sgi-flex">2</section>
+
+    <nav class="hbar-3 sgi-flex sgi-margin">3</nav>
+
+    <section class="hero-grid sgi-padding">
+        <div class="hero-1 hgi-scaler">h1</div>
+        <div class="hero-2 hgi-scaler">h2</div>
+        <div class="hero-3 hgi-scaler">h3</div>
     </section>
-    <main class="main-content sgi-grid">
+    <main class="main-content sgi-padding">
         <?= $main_content ?>
     </main>
-    <footer class="footer-content sgi-grid">
+    <section class="footer-2 sgi-padding">
+        footer-1
+    </section>
+    <footer class="footer-1 sgi-padding">
         Copyright &copy; <span class="this-year"></span>
     </footer>
     <script src="/static/vendor/jquery/dist/jquery.min.js"></script>
